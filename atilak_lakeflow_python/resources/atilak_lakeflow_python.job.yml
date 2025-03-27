@@ -31,8 +31,8 @@ resources:
             - task_key: refresh_pipeline
           job_cluster_key: job_cluster
           python_wheel_task:
-            package_name: atilak_lakeflow_python
-            entry_point: main
+            package_name: abhijit_tilak
+            entry_point: users
           libraries:
             # By default we just include the .whl file generated for the atilak_lakeflow_python package.
             # See https://docs.databricks.com/dev-tools/bundles/library-dependencies.html
