@@ -1,0 +1,13 @@
+# The main pipeline for atilak_lakeflow_python
+resources:
+  pipelines:
+    atilak_lakeflow_python_pipeline:
+      name: atilak_lakeflow_python_pipeline
+      catalog: main
+      target: atilak_lakeflow_python_${bundle.environment}
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+
+      configuration:
+        bundle.sourcePath: ${workspace.file_path}/src
