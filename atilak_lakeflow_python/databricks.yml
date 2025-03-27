@@ -16,6 +16,7 @@ targets:
     default: true
     workspace:
       host: https://adb-2548836972759138.18.azuredatabricks.net
+      root_path: /Workspace/Users/abhijit.tilak@databricks.com/sample-lakeflow-etl/${bundle.name}/${bundle.target}
 
   prod:
     mode: production
