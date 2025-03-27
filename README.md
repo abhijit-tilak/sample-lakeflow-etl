@@ -2,8 +2,8 @@
 
 ## Sample Python codebase
 
-[Python DABs ready Lakeflow DLT](../atilak_lakeflow_python)
+[Python DABs ready Lakeflow DLT](./atilak_lakeflow_python)
 
 ## Sample SQL codebase
 
-[SQL DABs ready Lakeflow DLT](../atilak_lf_sql)
+[SQL DABs ready Lakeflow DLT](./atilak_lf_sql)
