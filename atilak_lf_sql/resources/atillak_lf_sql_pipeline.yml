@@ -1,0 +1,19 @@
+resources:
+  pipelines:
+    atilak_lf_sql_pipeline:
+      name: atilak_lf_sql_pipeline
+      libraries:
+        - file:
+            path: ../src/data_sources/sample_taxis_raw.sql
+        - file:
+            path: ../src/transformations/sample_taxis.sql
+      schema: abhijit_tilak
+      development: true
+      photon: true
+      channel: PREVIEW
+      catalog: users
+      serverless: true
+      event_log:
+        name: event_log_atilak_lf_sql_pipeline
+        schema: abhijit_tilak
+        catalog: users

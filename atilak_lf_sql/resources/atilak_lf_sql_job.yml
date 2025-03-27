@@ -1,0 +1,18 @@
+resources:
+  jobs:
+    dev_abhijit_tilak_atilak_test_lakeflow:
+      name: "atilak_lf_sql_daily_job"
+      email_notifications:
+        on_failure:
+          - abhijit.tilak@databricks.com
+        no_alert_for_skipped_runs: true
+      trigger:
+        pause_status: UNPAUSED
+        periodic:
+          interval: 1
+          unit: DAYS
+      tasks:
+        - task_key: refresh_pipeline_daily
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.atilak_lf_sql_pipeline.id}
+      performance_target: COST_OPTIMIZED

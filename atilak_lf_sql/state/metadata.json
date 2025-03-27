@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "config": {
+    "bundle": {
+      "git": {
+        "branch": "main",
+        "origin_url": "https://github.com/abhijit-tilak/sample-lakeflow-etl.git",
+        "commit": "020aef8ff624e1ccd5d8bb27c5402082b1f04a77",
+        "bundle_root_path": "atilak_lf_sql"
+      }
+    },
+    "workspace": {
+      "file_path": "/Workspace/Users/abhijit.tilak@databricks.com/sample-lakeflow-etl/atilak_lf_sql"
+    },
+    "resources": {
+      "jobs": {
+        "dev_abhijit_tilak_atilak_test_lakeflow": {
+          "id": "457374930084105",
+          "relative_path": "resources/atilak_lf_sql_job.yml"
+        }
+      }
+    }
+  }
+}
